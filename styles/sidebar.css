@@ -1,0 +1,143 @@
+.sidebar{
+  position: fixed;
+  top: 6.5rem;
+  left: 0;
+  bottom: 0;
+  width: 330px;
+  background-color: white;
+  border-left-width: 1px solid rgb(238, 240, 241);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  font-size: 1.5rem;
+
+  overflow: auto;
+}
+
+.sidebar.active{
+  left: 0 !important;
+  animation: slide 0.7s ease ;
+}
+@keyframes slide {
+  0%{
+    transform: translateX(-100rem);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+@media (max-width: 768px) {
+  .sidebar{
+    left: -100rem !important;
+  }
+}
+.sidebar::-webkit-scrollbar {
+  width: 8px; /* thickness */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgb(241, 241, 241); /* track (background) */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(192, 192, 192, 0.5); /* scrollbar color */
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 192, 192, 0.5); /* on hover */
+}
+.sidebar-icon.active, .sidebar-icon.hover{
+  background-color: rgb(24, 119, 242);
+  border-radius: 5px;
+  animation: smooth 1s ease-in-out;
+}
+@keyframes smooth {
+  0%{
+    background-color: rgba(24, 118, 242, 0.4);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.sidebar-icon.hover i, .sidebar-icon.hover span,
+.sidebar-icon.active i, .sidebar-icon.active span{
+  color: white;
+}
+.sidebar-icon.active .meetup-container, .sidebar-icon.hover .meetup-container{
+  border-color: white;
+}
+.link-see-more{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar-icon, .see-more{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.link-color{
+  color: rgb(106, 113, 119);
+}
+.see-more-color{
+  color: rgb(24, 119, 242);;
+}
+/* @media (max-width: 768px) {
+  .sidebar{
+    width: 40%;
+    font-size: 1.3rem;
+  }
+} */
+.see-more{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.see-more span{
+  color: rgb(106, 113, 119);
+}
+.chevron-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: rgb(238, 240, 241);
+}
+.chevron-container::after{
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 1rem;
+  right: 1rem;
+  /* width: 100%; */
+  border: 1px solid  rgba(106, 113, 119, 0.2);
+}
+.chevron-container i{
+  font-size: 1.2rem;
+}
+.meetup-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  border: 1.5px dotted black;
+  border-radius: 50%;
+}
+
+.meetup-pad{
+  margin-top: 4rem;
+}
+.symbols{
+  font-size: 1.2rem;
+}

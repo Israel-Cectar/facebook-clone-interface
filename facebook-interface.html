@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/d40c45c33b.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/pages-and-profiles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- header Left Section -->
+    <div class="header-left-section">
+        <img class="facebook-logo" src="svg/facebook-logo.svg" alt="Facebook Logo">
+        <div class="search-input-position">
+          <input class="search-bar" type="text" name="" id="" placeholder="Search on Facebook">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!-- Header Center Section -->
+    <div class="header-center-section">
+      <div class="header-center-icon">
+        <i class="fa-solid fa-house js-homepage-indicator"></i>
+      </div>
+      <div class="header-center-icon">
+        <i class="fa-solid fa-user-group"></i>
+      </div>
+      <div class="header-center-icon">
+        <i class="fa-solid fa-gamepad"></i>
+      </div>
+      <div class="header-center-icon">
+        <i class="fa-solid fa-store"></i>
+      </div>
+      <div class="header-center-icon">
+        <i class="fa-solid fa-bell"></i>
+      </div>
+    </div>
+
+    <!-- Header Right Section -->
+    <div class="header-right-section">
+      <div class="header-right-icon menu-layout-spacing js-menu-layout-show">
+        <img class="menu-layout" src="/svg/layout-grid3-alt-svgrepo-com.svg" alt="">
+      </div>
+      <div class="header-right-icon">
+        <i class="fa-solid fa-toggle-on"></i>
+        <span>8</span>
+      </div>
+      <div class="header-right-icon">
+        <i class="fa-solid fa-bell"></i>
+      </div>
+      <div class="header-right-icon">
+        <i class="fa-solid fa-message"></i>
+        <span>4</span>
+      </div>
+      <div class="profile-image-position">
+        <img class="profile-image" src="images/user-11.png" alt="">
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- sidebar -->
+  <div class="sidebar">
+    <div class="link-see-more">
+      <span class="link-color">Your Link</span>
+      <span class="see-more-color">See more</span>
+    </div>
+    <!-- address book -->
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-address-book"></i>
+      <span>Friends</span>
+    </div>
+    <!-- bookmark -->
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-bookmark"></i>
+      <span>Teachers Dashboard...</span>
+    </div>
+    <!-- groups -->
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-users"></i>
+      <span>Groups</span>
+    </div>
+    <!-- marketplace -->
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span>Marketplace</span>
+    </div>
+    <!-- recording -->
+    <div class="sidebar-icon">
+      <i class="fa-regular fa-chart-bar"></i>
+      <span>Recordings</span>
+    </div>
+    <!-- wizard creators -->
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-calendar"></i>
+      <span>Wizard Creators</span>
+    </div>
+    <!-- events -->
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-suitcase-medical"></i>
+      <span>Events</span>
+    </div>
+    <div class="see-more">
+      <span>See more</span>
+      <div class="chevron-container">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="sidebar-icon meetup-pad">
+      <div class="meetup-container">
+        <span class="symbols">?</span>
+      </div>
+      <span>Meetup</span>
+    </div>
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-comments"></i>
+      <span>Messenger</span>
+    </div>
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-gamepad"></i>
+      <span>Gaming</span>
+    </div>
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-credit-card"></i>
+      <span>Payment</span>
+    </div>
+    <div class="sidebar-icon">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+      <span>Recent ad</span>
+    </div>
+  </div>
+  <!-- sidebar ends here -->
+
+  <!-- Content and feed -->
+  <div class="main">
+    <div class="story-wrapper">
+  <button class="arrow left disabled" id="leftBtn">&#10094;</button>
+
+  <div class="story-container" id="storyContainer">
+
+    <!-- CREATE STORY -->
+    <div class="story create">
+      <div class="create-top"></div>
+
+      <div class="create-bottom">
+        <p>Create A Story</p>
+      </div>
+
+      <div class="create-icon">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+    </div>
+
+    <!-- STORIES -->
+    <div class="story poster1">
+      <div class="avatar">
+        <img src="/images/user-12.png">
+      </div>
+      <span>Jhon Markous</span>
+    </div>
+
+    <div class="story poster2">
+      <div class="avatar">
+        <img src="/images/user-11.png">
+      </div>
+      <span>Hayat Montasir</span>
+    </div>
+
+    <div class="story poster3">
+      <div class="avatar">
+        <img src="/images/user-22.png">
+      </div>
+      <span>John Doe</span>
+    </div>
+
+    <div class="story">
+      <div class="avatar">
+        <img src="/images/user-24.png">
+      </div>
+      <span>Mohemed Ait Bouazawi</span>
+    </div>
+
+    <div class="story">
+      <div class="avatar">
+        <img src="/images/user-23.png">
+      </div>
+      <span>Mostafa Masnawi</span>
+    </div>
+
+  </div>
+
+  <button class="arrow right" id="rightBtn">&#10095;</button>
+</div>
+
+    <!-- write an article segment -->
+    <div class="whats-on-your-mind" style="background-color: white;">
+      <div class="write-a-post">
+        <img class="writer-image" src="/images/user-11.png" alt="">
+        <input class="js-input-click" type="text" placeholder="What's on your mind?">
+      </div>
+      <!-- image icon, photo icon,  and reel -->
+      <div class="image-icon-reel-flex">
+        <div class="image-icon-reel">
+          <img src="svg/icons8-video-48.png" alt="">
+          <span>Live Video</span>
+        </div>
+        <div class="image-icon-reel">
+          <img src="svg/icons8-photo-gallery-48.png" alt="">
+          <span>Photo/Video</span>
+        </div>
+        <div class="image-icon-reel">
+          <img src="svg/icons8-film-reel-48.png" alt="">
+          <span>Reels</span>
+        </div>
+      </div>
+    </div>
+    <div class="content-segment" style="background-color: white;">
+      <div class="author-post-cancel">
+        <div class="author">
+          <img src="/images/pt-1.jpg" alt="">
+          <div class="name-and-time">
+            <p>Escaldior moiz</p>
+            <p class="time-globe">11 a.m. <span><i class="fa-solid fa-globe"></i></span></p>
+          </div>
+        </div>
+        <div class="post-cancel">
+          <i class="fa-solid fa-ellipsis"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <p class="content-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <img class="content" src="/images/p-6.jpg" alt="">
+      <div class="like-and-comment-count">
+        <div class="like-number">
+        <div>
+        <i class="fa-solid fa-thumbs-up like-btn"></i>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <span class="like-count">18k</span>
+      </div>
+      <div class="comment-count">
+        3.8k Comments 1.5k shares
+      </div>
+      </div>
+      <div class="like-comment-share-space">
+      <div class="icon-title active-like-btn"><i class="fa-regular fa-thumbs-up "></i>
+        <span>Like</span>
+      </div>
+      <div class="icon-title active-like-btn"><i class="fa-regular fa-comment"></i>
+        <span>Comment</span>
+      </div>
+      <div class="icon-title active-like-btn"><i class="fa-solid fa-share"></i>
+        <span>Share</span>
+      </div>
+    </div>
+    </div>
+    <div class="content-segment" style="background-color: white;">
+      <div class="author-post-cancel">
+        <div class="author">
+          <img src="/images/user-24.png" alt="">
+          <div class="name-and-time">
+            <p>Mohemed Ait Bouazawi</p>
+            <p class="time-globe">18hr. <span><i class="fa-solid fa-globe"></i></span></p>
+          </div>
+        </div>
+        <div class="post-cancel">
+          <i class="fa-solid fa-ellipsis"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <p class="content-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rerum perspiciatis ducimus, deserunt.</p>
+      <video controls="on" class="content" src="/images/v-2.mp4"></video>
+      <div class="like-and-comment-count">
+        <div class="like-number">
+        <div>
+        <i class="fa-solid fa-thumbs-up like-btn"></i>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <span class="like-count">3k</span>
+      </div>
+      <div class="comment-count">
+        849 Comments 576 shares
+      </div>
+      </div>
+      <div class="like-comment-share-space">
+      <div class="icon-title active-like-btn"><i class="fa-regular fa-thumbs-up "></i>
+        <span>Like</span>
+      </div>
+      <div class="icon-title active-like-btn"><i class="fa-regular fa-comment"></i>
+        <span>Comment</span>
+      </div>
+      <div class="icon-title active-like-btn"><i class="fa-solid fa-share"></i>
+        <span>Share</span>
+      </div>
+    </div>
+    </div>
+
+    <div class="content-segment" style="background-color: white;">
+      <div class="author-post-cancel">
+        <div class="author">
+          <img src="/images/user-12.png" alt="">
+          <div class="name-and-time">
+            <p>Jhon Markous</p>
+            <p class="time-globe">2hr. <span><i class="fa-solid fa-globe"></i></span></p>
+          </div>
+        </div>
+        <div class="post-cancel">
+          <i class="fa-solid fa-ellipsis"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <p class="content-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquid dicta eligendi enim quo rem modi doloremque fugiat libero quam porro minima culpa nostrum illo architecto, vitae deleniti quisquam laudantium?.</p>
+      <img class="content" src="/images/p-5.jpg" alt="">
+      <div class="like-and-comment-count">
+        <div class="like-number">
+        <div>
+        <i class="fa-solid fa-thumbs-up like-btn"></i>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <span class="like-count">Afrokryptonian and 734 others</span>
+      </div>
+      <div class="comment-count">
+        303 Comments 191 shares
+      </div>
+      </div>
+      <div class="like-comment-share-space">
+      <div class="icon-title active-like-btn"><i class="fa-regular fa-thumbs-up "></i>
+        <span>Like</span>
+      </div>
+      <div class="icon-title active-like-btn"><i class="fa-regular fa-comment"></i>
+        <span>Comment</span>
+      </div>
+      <div class="icon-title active-like-btn"><i class="fa-solid fa-share"></i>
+        <span>Share</span>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="page-and-profile-block">
+    <div class="page-header">
+      <h1>Your Pages and Profiles</h1>
+      <button class="ellipsis">
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
+    </div>
+    <div class="profile-account">
+      <img class="profile-account-image" src="/images/dp6.jpg" alt="">
+      <span class="profile-account-name">Camfour</span>
+    </div>
+    <div class="profile-account">
+      <img class="profile-account-image" src="/images/h-2.jpg" alt="">
+      <span class="profile-account-name">Official Axilook</span>
+    </div>
+    <button class="create-button">Create A Page</button>
+
+    <div class="page-header">
+      <h1>Contact</h1>
+      <button class="ellipsis">
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
+    </div>
+    <div class="profile-account">
+      <div class="profile-image-position">
+        <img class="profile-account-image" src="/images/user-25.png" alt="">
+        <span class="notif"></span>
+      </div>
+      <p class="profile-account-name">Ahmed Lamki</p>
+    </div>
+    <div class="profile-account">
+      <div class="profile-image-position">
+        <img class="profile-account-image" src="/images/user-24.png" alt="">
+        <span class="notif"></span>
+      </div>
+      <p class="profile-account-name">Mohemed Ait Bouazawi</p>
+    </div>
+    <div class="profile-account">
+      <div class="profile-image-position">
+        <img class="profile-account-image" src="/images/user-23.png" alt="">
+        <span class="notif"></span>
+      </div>
+      <p class="profile-account-name">Mostafa Masnawi</p>
+    </div>
+    <div class="profile-account">
+      <div class="profile-image-position">
+        <img class="profile-account-image" src="/images/user-12.png" alt="">
+        <span class="notif"></span>
+      </div>
+      <p class="profile-account-name">Jhon Markous</p>
+    </div>
+    <button class="create-button">Add More Friends</button>
+
+    <div class="page-header">
+      <h1>Your Discussions</h1>
+      <button class="ellipsis">
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
+    </div>
+    <div class="profile-account">
+      <img class="group-image" src="/images/dp6.jpg" alt="">
+      <div class="content-preview">
+        <span class="group-name">Group vender Rabat Temara</span>
+        <span class="discourse">Lorem ipsum dolor sit amet ...</span>
+      </div>
+    </div>
+    <div class="profile-account">
+      <img class="group-image" src="/images/h-2.jpg" alt="">
+      <div class="content-preview">
+        <span class="group-name">BI3 CHRA Casa Mohamdia</span>
+        <span class="discourse">Lorem ipsum dolor sit amet ...</span>
+      </div>
+    </div>
+    <button class="create-button">Create Groups</button>
+  </div>
+
+  <!-- write a post to public -->
+   <div class="post-segment">
+    <div class="post-header">
+      <span>Create A Post</span>
+      <div class="cancel-btn js-cancel-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+
+    <div class="user-profile-input">
+      <div class="user-public-profile">
+        <img src="images/user-11.png" alt="">
+        <span></span>
+      </div>
+      <div class="profile-public">
+        <span class="user-profile">User Profile</span>
+        <span class="public">Public</span>
+      </div>
+    </div>
+    <div class="input-publication">
+      <input class="post-article-block" type="text" name="" id="" placeholder="What's on your mind, Israel?">
+    </div>
+    <div class="add-to-public">
+      <p>Add To Your Publication</p>
+      <div class="to-add-icons-block">
+        <div class="icon-segment">
+          <i class="fa-solid fa-image"></i>
+        </div>
+        <div class="icon-segment">
+          <i class="fa-solid fa-video"></i>
+        </div>
+        <div class="icon-segment">
+          <div class="symbols meetup-container">?</div>
+        </div>
+        <div class="icon-segment">
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+      </div>
+    </div> 
+    <div class="meta-biz">
+    <p>Schedule Your Post In <a>Meta Business Suite.</a>
+  </div>
+  <button class="create-post-button js-create-post-button">Create A Post</button> 
+   </div>
+
+  <div class="make-post js-make-post">
+    <i class="fa-solid fa-pen-to-square"></i>
+  </div>
+  <script src="scripts/header.js"></script>
+  <script src="/scripts/sidebar.js"></script>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>

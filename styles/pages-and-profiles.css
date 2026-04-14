@@ -1,0 +1,158 @@
+.page-and-profile-block{
+position: fixed;
+top: 6.5rem;
+right: 0;
+bottom: 0;
+width: 355px;
+padding: 1rem 2rem;
+display: flex;
+flex-direction: column;
+z-index: 1;
+font-size: 1.5rem;
+/* background-color: white; */
+overflow: auto;
+}
+.page-and-profile-block::-webkit-scrollbar {
+  width: 8px; /* thickness */
+}
+
+.page-and-profile-block::-webkit-scrollbar-track {
+  background: rgb(241, 241, 241); /* track (background) */
+}
+
+.page-and-profile-block::-webkit-scrollbar-thumb {
+  background: rgba(192, 192, 192, 0.5); /* scrollbar color */
+  border-radius: 4px;
+}
+
+.page-and-profile-block::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 192, 192, 0.5); /* on hover */
+}
+
+.page-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.page-header h1{
+  font-size: 1.5rem;
+  color: rgb(40, 44, 48);
+}
+.ellipsis{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(238, 240, 241);
+  cursor: pointer;
+} 
+.profile-account{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+.profile-account:hover{
+  background-color: rgba(106, 113, 119, 0.048);
+  border-radius: 5px;
+}
+.profile-account-image{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-account-name{
+  color: rgb(106, 113, 119);
+  font-size: 1.5rem;
+}
+.create-button{
+  margin-top: 0.8rem;
+  background-color: rgb(228, 232, 236);
+  color: rgb(106, 113, 119);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.create-button::after{
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(241, 241, 241, 0.596);
+}
+
+.profile-image-position{
+  position: relative;
+}
+
+.notif{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+}
+
+.profile-account-image{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.content-preview{
+  display: flex;
+  flex-direction: column;
+}
+.group-name{
+  color: rgb(40, 44, 48);
+  font-size: 1.6rem;
+}
+.discourse{
+  color: rgb(106, 113, 119);;
+}
+.group-image{
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.make-post{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 50;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.post-article-block.active{
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .page-and-profile-block{
+    display: none;
+  }
+  .like-count, .comment-count{
+    font-size: 1rem;
+  }
+}
